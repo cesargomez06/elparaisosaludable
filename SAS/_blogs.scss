@@ -1,0 +1,49 @@
+.receta {
+    display: grid;
+    width: 210vh;
+    padding: 20px 20px;
+    border: solid 1px black;
+
+ul li {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+img {
+    width: 500px;
+    height: 500px;
+}
+p, h2, h4 {
+
+    text-align: center;
+}
+}
+.titulo {
+    text-align: center;
+    grid-area: 1 / 1 / 1 / 3;
+}
+.ingredientes {
+    grid-area: 2 / 2 / 3 / 3;
+    
+}       
+.imagen-blog {
+    justify-self: center;
+}
+.preparacion {
+    grid-area: 4/1/5/2 ;
+    line-height: 30px;
+   
+
+}
+.video {
+    grid-area: 5/3/4/2;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    
+    iframe {
+    width: 564px;
+    height: 315px;
+    }
+}
+

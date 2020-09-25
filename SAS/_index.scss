@@ -1,0 +1,79 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.nuestra-historia {
+    padding: 5px 200px 50px 200px;
+}
+h1 {
+    font-family:$fuente-titulos;
+    font-size: 80px;
+    padding: 20px;
+    text-align: center;
+}
+h2 {
+    font-size: 35px;
+    text-align: center;
+    font-family: $fuente-titulos;
+}
+h3 {
+    font-size: 20px;
+    text-align: center;
+}
+h4 {
+    padding: 30px;
+}
+p {
+    font-size: 16px;
+    padding: 10px;
+}
+
+section { 
+h2  {
+    display: inline-block;
+    padding: 20px;
+    text-align: left;
+    font-size: 50px ;
+}
+h2::after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 5px;
+    background:black;
+    transition: width 2s;
+}
+h2:hover::after {
+    width: 300px;
+}
+
+img {
+    width: 700px;
+    height: 700px;
+    padding: 10px;
+    margin: auto;
+}
+}
+.derechos {
+    padding: 20px 10px;
+    background-color: $color-principal;;
+    display: flex;
+    justify-content: space-around;
+p {
+    font-size: 12px;
+}
+}
+.menu-mobile {
+    display: none;
+}
+
+footer {
+    z-index: 2;
+    background-color: $color-secundario;
+    width: 100%;
+}

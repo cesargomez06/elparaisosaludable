@@ -1,0 +1,25 @@
+.novedades {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: #A6C48A;
+    padding: 1px 10px 2px 0;
+    border: solid 1px #a6c48a;
+    width: 100%;
+    margin: 0rem;
+    
+
+.novedades div{
+    display: inline-block;
+    width: 180px;
+    margin: 40px;
+}
+input {
+    border: 0;
+    border-radius: 2px;
+    width: 12rem;
+    height: 2rem;
+    font-family: $fuente-parrafos;
+    text-align: center;
+}
+}

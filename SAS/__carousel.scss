@@ -1,0 +1,23 @@
+.h5, h5 {
+    font-size: 50px;
+}
+.carousel.slide .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+
+/*****MODAL*****/
+div .modal-content {
+    background: $color-principal;
+}
+button.btn.btn-primary {
+    background: black;
+    text-transform: uppercase;
+   }
+   .modal-footer button.btn.sesbtn-secondary {
+       background: black;
+       text-transform: uppercase;
+   }

@@ -1,0 +1,102 @@
+@media (min-width: 769px) and (max-width: 1199px) {
+    .row {
+        display: flex;
+    }
+    .contacto p {
+        display: none;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    header .responsive {
+        background: #dd9787;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    header .contenedor {
+        display: none;
+    }
+    
+    .nuestra-historia {
+        padding: 0 0;
+    }
+    section h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        text-align: center;
+    }
+    section h3 {
+        font-size: 16px;
+    }
+    form input {
+        width: 10rem;
+    } 
+    .novedades {
+        background: #A6C48A;
+        padding: 1px 0 2px;
+        border: solid 1px #a6c48a;
+        width: 100%;
+        margin: 0rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+    h2::after {
+        display: none;
+    }
+    .novedades div {
+        width: 100%;
+        padding: 2px;
+    }
+    .contacto {
+        display: inline;
+    }
+    .menu-mobile {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .menu-mobile  a.nav-link  {
+        margin: 2px;
+        background-color: black;
+        color: white;
+    }
+    .menu-mobile .nav-pills .nav-link.active  {
+        margin: 2px;
+        background-color:white;
+        color: black;
+        font-weight: bold;
+    }
+    section h2::after{
+        display: none;
+    } 
+    .promociones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    }
+    .imagenes img {
+    height: 200px;
+    width: 200px;
+    }
+    .donde-encontrarnos {
+       display: none;
+    }
+    .mapa {
+        display: none;
+    }
+    .envio {
+        padding: 0px;
+    }
+    form.formulario {
+        padding: 0px;
+        margin: 0px;
+    }
+}

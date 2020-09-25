@@ -1,0 +1,29 @@
+.preguntas {
+    background: #f0d3ba;
+    display: flex;
+    justify-content: space-around;
+
+a button {
+    background: black;
+    border: 1px;
+    padding: 1px;
+    text-decoration: none;
+}
+a  h1{
+    color: black;
+    font-size: 30px;
+    font-family: $fuente-parrafos;
+    text-transform: uppercase;
+    padding: 2px;
+}
+a button h1 {
+    color: #ffff;
+    font-family: $fuente-parrafos;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 2px;
+}
+.btn-secondary {
+    background-color: black;
+}
+}

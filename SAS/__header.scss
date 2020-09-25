@@ -1,0 +1,70 @@
+header {
+    font-family: $fuente-parrafos;
+    background-color: $color-principal;
+
+    .encabezado {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+    }
+    .responsive {
+        display: none;
+    }
+    .contenedor {
+        background-image: url("../imagenes/fondo\ con\ sombra.png");
+        min-height: 50%;
+        min-width: 100%;
+        background-size: cover;
+        background-position: center; 
+        padding: 50px ;
+        width: 100%;
+        height: 100%;
+    }
+    nav {
+        padding-top: 18px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo img{
+        display: flex;
+        position: relative;
+        height: 200px;
+    }    
+    nav ul {
+        display:flex;
+        list-style: none;
+        font-size: 10px;
+        letter-spacing: 1px;
+        
+    }
+    nav ul li a{
+        color: black;
+        text-transform: uppercase;
+        padding: 10px;
+        text-decoration:none;
+        border: solid 1px black;
+        border-radius: 5px;
+        margin: 1rem;
+        background: rgba(255, 255, 255, .1);
+    }
+    .open, 
+    .close {
+        display: none;
+    }
+    nav ul li a:hover {
+        color: black;
+        background: #ffff;
+        text-decoration: none;
+    }
+    .d-block { 
+        height: 300px;  
+    } 
+ 
+    .covid19 {
+        min-height: 50%;
+        min-width: 100%;
+        background-size: cover;
+        background-position: center; 
+    }
+}
