@@ -105,8 +105,8 @@ header .close {
   display: none;
 }
 header nav ul li a:hover {
-  color: black;
-  background: #ffff;
+  color: white;
+  background: black;
   text-decoration: none;
 }
 header .d-block {
@@ -163,7 +163,13 @@ header .covid19 {
   display: flex;
   justify-content: center;
   padding: 0px;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+.contacto p, .donde-encontrarnos p {
+  font-size: 14px;
   font-weight: bold;
+  margin-bottom: 0px;
 }
 
 .donde-encontrarnos {
@@ -922,6 +928,10 @@ button.btn.btn-primary {
 .menu-inferior a {
   width: 10px;
   height: 10px;
+}
+.menu-inferior ul li a:hover {
+  background: white;
+  text-decoration: none;
 }
 
 .h5, h5 {
