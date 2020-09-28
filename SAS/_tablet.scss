@@ -13,6 +13,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        img {
+            display: block;
+            width: 200px;
+            height: 133px;
+        }
 
     }
     header .contenedor {
@@ -57,15 +62,39 @@
     }
     .menu-mobile {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         text-transform: uppercase;
         font-size: 12px;
-    }
-    .menu-mobile  a.nav-link  {
-        margin: 2px;
+
+         .btn-secondary {
+        margin: 2px 4px;
+        text-transform: uppercase;
         background-color: black;
         color: white;
+        font-size: 14px;
+        }
+        .dropdown-item {
+            width: unset;
+            margin: 2px;
+            background-color:white;
+            font-size: 12px;
+            color: black;
+            font-weight: bold;
+        }
+        .dropdown-item1 {
+        display: block;
+        text-align: inherit;
+        margin: 2px;
+        background-color: black;
+        font-size: 12px;
+        color: white;
+        font-weight: bold;
+        padding: .25rem 1.5rem;
+
+        }    
+
     }
+   
     .menu-mobile .nav-pills .nav-link.active  {
         margin: 2px;
         background-color:white;
@@ -75,6 +104,9 @@
     section h2::after{
         display: none;
     } 
+    ol.carousel-indicators {
+        margin-bottom: 0px;
+    }
     .promociones {
     display: flex;
     flex-wrap: wrap;

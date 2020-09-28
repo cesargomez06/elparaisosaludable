@@ -290,6 +290,7 @@ header .covid19 {
   display: grid;
   grid-template-columns: 50% 50%;
   border: solid 1px black;
+  padding: 20px;
 }
 .blog-parte2 h5 {
   grid-area: 1/1/2/3;
@@ -616,6 +617,10 @@ footer {
     grid-area: 6/1/7/1;
   }
 
+  ol.carousel-indicators {
+    margin-bottom: 0px;
+  }
+
   .video {
     grid-area: 5/1/4/1;
     justify-content: left;
@@ -668,6 +673,11 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
+  header .responsive img {
+    display: block;
+    width: 200px;
+    height: 133px;
+  }
 
   header .contenedor {
     display: none;
@@ -719,15 +729,34 @@ footer {
 
   .menu-mobile {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     text-transform: uppercase;
     font-size: 12px;
   }
-
-  .menu-mobile a.nav-link {
-    margin: 2px;
+  .menu-mobile .btn-secondary {
+    margin: 2px 4px;
+    text-transform: uppercase;
     background-color: black;
     color: white;
+    font-size: 14px;
+  }
+  .menu-mobile .dropdown-item {
+    width: unset;
+    margin: 2px;
+    background-color: white;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+  }
+  .menu-mobile .dropdown-item1 {
+    display: block;
+    text-align: inherit;
+    margin: 2px;
+    background-color: black;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    padding: 0.25rem 1.5rem;
   }
 
   .menu-mobile .nav-pills .nav-link.active {
@@ -739,6 +768,10 @@ footer {
 
   section h2::after {
     display: none;
+  }
+
+  ol.carousel-indicators {
+    margin-bottom: 0px;
   }
 
   .promociones {
