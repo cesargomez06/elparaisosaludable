@@ -8,6 +8,7 @@ a button {
     border: 1px;
     padding: 1px;
     text-decoration: none;
+    border-color:unset;
 }
 a  h1{
     color: black;
@@ -15,6 +16,7 @@ a  h1{
     font-family: $fuente-parrafos;
     text-transform: uppercase;
     padding: 2px;
+   
 }
 a button h1 {
     color: #ffff;
@@ -23,7 +25,21 @@ a button h1 {
     text-transform: uppercase;
     padding: 2px;
 }
-.btn-secondary {
+.btn-secondary  {
     background-color: black;
 }
 }
+/*****MODAL*****/
+div .modal-content {
+    background: $color-principal;
+}
+button.btn.btn-primary {
+    background: black;
+    text-transform: uppercase;
+    border-color: black;
+
+   }
+   .modal-footer button.btn.sesbtn-secondary {
+       background: black;
+       text-transform: uppercase;
+   }

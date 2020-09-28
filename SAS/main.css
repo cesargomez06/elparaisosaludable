@@ -436,6 +436,11 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
+  header .responsive img {
+    display: block;
+    width: 200px;
+    height: 133px;
+  }
   header .contenedor {
     display: none;
   }
@@ -498,15 +503,34 @@ footer {
 
   .menu-mobile {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     text-transform: uppercase;
     font-size: 12px;
   }
-
-  .menu-mobile a.nav-link {
-    margin: 2px;
+  .menu-mobile .btn-secondary {
+    margin: 2px 4px;
+    text-transform: uppercase;
     background-color: black;
     color: white;
+    font-size: 14px;
+  }
+  .menu-mobile .dropdown-item {
+    width: unset;
+    margin: 2px;
+    background-color: white;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+  }
+  .menu-mobile .dropdown-item1 {
+    display: block;
+    text-align: inherit;
+    margin: 2px;
+    background-color: black;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    padding: 0.25rem 1.5rem;
   }
 
   .menu-mobile .nav-pills .nav-link.active {
@@ -527,10 +551,14 @@ footer {
     align-content: center;
     align-items: center;
   }
+  .promociones img {
+    width: 300px;
+    height: 300px;
+  }
 
-  .imagenes img {
-    height: 200px;
-    width: 200px;
+  img.wow.animate__.animate__flipInX.animated {
+    width: 300px;
+    height: 300px;
   }
 
   .donde-encontrarnos {
@@ -617,6 +645,10 @@ footer {
 
   .texto {
     flex-direction: column;
+  }
+
+  .covid-home p {
+    font-size: unset;
   }
 }
 @media (min-width: 769px) and (max-width: 1199px) {
@@ -759,6 +791,7 @@ footer {
   border: 1px;
   padding: 1px;
   text-decoration: none;
+  border-color: unset;
 }
 .preguntas a h1 {
   color: black;
@@ -776,6 +809,22 @@ footer {
 }
 .preguntas .btn-secondary {
   background-color: black;
+}
+
+/*****MODAL*****/
+div .modal-content {
+  background: #F6E7CB;
+}
+
+button.btn.btn-primary {
+  background: black;
+  text-transform: uppercase;
+  border-color: black;
+}
+
+.modal-footer button.btn.sesbtn-secondary {
+  background: black;
+  text-transform: uppercase;
 }
 
 .imagenes {
@@ -851,19 +900,4 @@ footer {
   height: 15px;
   border-radius: 100%;
   background-color: black;
-}
-
-/*****MODAL*****/
-div .modal-content {
-  background: #F6E7CB;
-}
-
-button.btn.btn-primary {
-  background: black;
-  text-transform: uppercase;
-}
-
-.modal-footer button.btn.sesbtn-secondary {
-  background: black;
-  text-transform: uppercase;
 }

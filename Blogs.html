@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Blogs | Novedades sobre alimentos dietéticos | Dietética Online | El Paraíso Saludable</title>
+    <meta name="description" content="En nuestro blog podras encontrar las ultimas tendencias en el mundo natural, tanto alimentos como suplentos">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stalemate&display=swap">
     <link rel="stylesheet" href="CSS/estilos.css">
     <link rel="stylesheet" href="SAS/main.css">
-    <title>Blogs | Novedades sobre alimentos dietéticos | Dietética Online | El Paraíso Saludable</title>
-    <meta name="description" content="En nuestro blog podras encontrar las ultimas tendencias en el mundo natural, tanto alimentos como suplentos">
     <link
      rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     /><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-
+<body>
+    
     <header>
         <div class="contacto" id="subir">
             <p> Horarios: Lunes a viernes de 9 a 20hs. Sábados y Domingos de 9 a 13hs</P>
@@ -27,20 +28,23 @@
                     <li class="nav-item">
                       <a class="nav-link active" href="index.html">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Nuestra historia.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Promociones.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                     <a class="nav-link" href="contacto.html">contacto</a>
-                    </li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle black" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Menu
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item1" href="Nuestra historia.html">Nosotros</a>
+                          <a class="dropdown-item" href="Promociones.html">Productos</a>
+                          <a class="dropdown-item1" href="Blogs.html">Blog</a>
+                          <a class="dropdown-item" href="contacto.html">contacto</a>
+                        </div>
+                      </div>
                   </ul>
                   </section>
-            <section class="responsive">
-                <h1>El Paraíso Saludáble</h1>
-                <h2>Dietetica integral</h2>
+                 <section class="responsive">
+                
+                <a href="index.html"> <img src="imagenes/logo-mobile.png" alt=""></a>
+                
                 </section>
             
         <div class="contenedor">
@@ -255,5 +259,15 @@
             <p>  Desarrollado por Cesar Gomez. DISEÑO Y DESARROLLO WEB.</p>
         </section> 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./js/wow.min.js">
+    </script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 </html>
