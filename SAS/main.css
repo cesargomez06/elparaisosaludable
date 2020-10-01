@@ -496,8 +496,7 @@ footer {
     align-items: center;
     text-align: center;
   }
-
-  div {
+  .novedades div {
     width: 100%;
     padding: 2px;
   }
@@ -677,6 +676,16 @@ footer {
   .banner img {
     width: 100%;
     padding-left: unset;
+  }
+
+  img.wow.animate__animated.animated.animate__zoomIn.animated {
+    width: 250px;
+    height: 250px;
+  }
+
+  img.wow.animate__.animate__zoomIn.animated {
+    width: 250px;
+    height: 250px;
   }
 }
 @media (min-width: 769px) and (max-width: 1199px) {
