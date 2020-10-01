@@ -64,19 +64,20 @@ header .responsive {
   display: none;
 }
 header .contenedor {
-  background-image: url("../imagenes/fondo con sombra.png");
+  background-image: url("../imagenes/menu imagen.jpg");
   min-height: 50%;
   min-width: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   padding: 50px;
   width: 100%;
   height: 100%;
 }
 header nav {
-  padding-top: 18px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-top: 80px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 header .logo img {
@@ -98,7 +99,6 @@ header nav ul li a {
   border: solid 1px black;
   border-radius: 5px;
   margin: 1rem;
-  background: rgba(255, 255, 255, 0.1);
 }
 header .open,
 header .close {
@@ -110,7 +110,7 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 header .d-block {
-  height: 300px;
+  height: auto;
 }
 header .covid19 {
   min-height: 50%;
@@ -345,6 +345,9 @@ body {
 .nuestra-historia {
   padding: 5px 200px 50px 200px;
 }
+.nuestra-historia .carousel-inner h5 {
+  padding-top: 0px;
+}
 
 h1 {
   font-family: "Stalemate", cursive;
@@ -425,6 +428,11 @@ footer {
   height: 400px;
 }
 
+.banner img {
+  display: flex;
+  padding-left: 100px;
+}
+
 /***** MOBILE *****/
 @media (max-width: 768px) {
   .row {
@@ -488,24 +496,23 @@ footer {
     align-items: center;
     text-align: center;
   }
-  .novedades div {
+
+  div {
     width: 100%;
     padding: 2px;
+  }
+
+  .imagenes img {
+    width: 100px;
+    height: 90%;
   }
 
   .contacto, .donde-encontrarnos {
     display: inline;
   }
 
-  .menu-inferior {
+  header nav ul {
     display: none;
-    position: absolute;
-    top: 10px;
-  }
-
-  div .menu-inferior {
-    display: none;
-    flex-direction: column;
   }
 
   .menu-mobile {
@@ -545,6 +552,11 @@ footer {
     background-color: white;
     color: black;
     font-weight: bold;
+    flex-wrap: unset;
+  }
+
+  ul.nav.nav-pills {
+    flex-wrap: unset;
   }
 
   section h2::after {
@@ -559,7 +571,7 @@ footer {
     align-items: center;
   }
   .promociones img {
-    width: 300px;
+    width: auto;
     height: 300px;
   }
 
@@ -661,6 +673,11 @@ footer {
   .covid-home p {
     font-size: unset;
   }
+
+  .banner img {
+    width: 100%;
+    padding-left: unset;
+  }
 }
 @media (min-width: 769px) and (max-width: 1199px) {
   .row {
@@ -729,6 +746,10 @@ footer {
     padding: 2px;
   }
 
+  header nav ul {
+    display: none;
+  }
+
   .contacto, .donde-encontrarnos {
     display: inline;
   }
@@ -789,8 +810,8 @@ footer {
   }
 
   .imagenes img {
-    height: 200px;
-    width: 200px;
+    width: 90%;
+    height: 90%;
   }
 
   .donde-encontrarnos {
@@ -818,6 +839,11 @@ footer {
   .video iframe {
     width: 100%;
     height: 254px;
+  }
+
+  .banner img {
+    width: 100%;
+    padding-left: unset;
   }
 }
 .preguntas {
@@ -915,6 +941,13 @@ button.btn.btn-primary {
   margin: 30px 10px;
 }
 
+.menu-inferior {
+  display: flex;
+  background-color: unset;
+  padding-top: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .menu-inferior ul li a {
   color: black;
   text-transform: uppercase;
@@ -943,4 +976,12 @@ button.btn.btn-primary {
   height: 15px;
   border-radius: 100%;
   background-color: black;
+}
+
+.carousel-caption {
+  top: 0px;
+}
+.carousel-caption h5 {
+  color: black;
+  font-size: 20px;
 }

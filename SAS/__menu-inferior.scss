@@ -1,4 +1,10 @@
 .menu-inferior {
+    display: flex;
+    background-color: unset;
+    padding-top: 50px;
+    justify-content: space-evenly;
+    align-items: center; 
+
 ul li a  {
     color: black;
     text-transform: uppercase;

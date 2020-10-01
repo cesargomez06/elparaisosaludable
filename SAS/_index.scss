@@ -9,6 +9,9 @@ body {
 }
 .nuestra-historia {
     padding: 5px 200px 50px 200px;
+    .carousel-inner h5{
+        padding-top: 0px;
+    }
 }
 h1 {
     font-family:$fuente-titulos;
