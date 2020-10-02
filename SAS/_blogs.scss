@@ -92,5 +92,45 @@ p, h2, h4 {
     list-style: none;
     }
 }
-
+.menu-blog {
+    
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-size: cover;
+        width: 25%;
+        height: 450px;
+    }
+    .menu-blog0 {
+    background-image: url("../imagenes/consejos.jpg");
+    transition: width 0.5s;
+    background-position: center;
+    
+    }
+    .menu-blog0:hover {
+        width: 70vw;
+    }
+    .menu-blog1 {
+        background-image: url("../imagenes/recetas.jpg");
+        transition: width 0.5s;
+        background-position: center;
+    }
+    .menu-blog1:hover {
+        width: 70vw;
+    }
+    .menu-blog2 {
+        background-image: url("../imagenes/receta\ 1.jpg");
+        transition: width 0.5s;
+        background-position: center;
+    }
+    .menu-blog2:hover {
+        width: 70vw;
+    }
+}
 
