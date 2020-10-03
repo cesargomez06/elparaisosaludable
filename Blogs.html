@@ -86,31 +86,41 @@
         <a href="imagenes/recetas.jpg"></a>
     </div>
         </header>
+
     <div class="blog">   
-   <section >
-
-        <div> 
-            <h1>Blogs</h1>
-            <h2>Te traemos las últimas novedades de nuestra forma de vivir saludable</h2>
+    <section>
+        <div > 
+            <h2>Blogs</h2>
+            <h3>Te traemos las últimas novedades de nuestra forma de vivir saludable</h3>
         </div>
-
    </section>
 
    <section class="menu-blog">
-    <a href="#" class="menu-blog0">
-        <h5>Hola aparece</h5>
+    <a href=#hierbas class="menu-blog0">
+        <h5>Hierbas</h5>
     </a>
-    <a href="#" class="menu-blog1"></a>
-    <a href="#" class="menu-blog2"></a>
+    <a href="#recetas" class="menu-blog1">
+        <h5>Recetas</h5>
+    </a>
+    
+    <a href="#productos" class="menu-blog2">
+        <h5>Productos</h5>
+    </a>
+    
     </section>
-   <section class="receta">
-        <div class="titulo">
-            <h2>Mirá esta receta de Marroc casero</h2>
-        </div>    
-        <div class="ingredientes">
-            
-            <h2>¡Manos a la obra! </h2>    
-            <h4>Ingredientes:</h4>
+
+   <section class="blog-parte2">
+    <div class="recomendacion"> 
+        <img  id="recetas" src="imagenes/receta de marroc.jpg" alt="Receta de marroc" >
+    </div>
+        
+            <h5>Recetas</h5>
+        
+        <div class="texto">
+            <h5>Mirá esta receta de Marroc casero </h5>
+            <p>Solo necesitas ponerle mucho amor, una sonrisa y los siguientes ingredientes</p>
+
+            <h5>Ingredientes:</h5>
             <ul>
                 <li>
                     200g de chocolate
@@ -126,44 +136,69 @@
                     Pasta de Maní
                 </li>
             </ul>
-        </div> 
-        <div> 
-            <img class="imagen-blog" src="imagenes/receta de marroc.jpg" alt="Receta de marroc" >
-        </div>
-       <div class="preparacion">
-            <p>
-                Modo de Preparación:
-            </p>
-            <p>
-                Primero derretimos 100g de chocolate con leche y le agregamos 2 cucharadas soperas de pasta de maní,mezclamos, lo colocamos en una budinera o recipiente rectangular que tengas, previamente cubrirlo por dentro con film, llevamos al freezer por 5 min.
-                Mientras, derretimos los 100g de choco blanco y le agregamos 3 cucharadas soperas de pasta de maní,sacamos del freezer la capa anterior, le agregamos esta mezcla y la volvemos llevar al freezer por otros 5 min.
-                Llegamos a la última capa donde repetimos lo mismo que en la primera, últimos 5 minutos en el freezer y ¡listos tus Marrocs!
-            </p>
-        </div>
-        <div class="video">
-             <iframe 
-                   src="https://www.youtube.com/embed/BCeUuLwNOcY" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-             </iframe>
         
-    </section>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Ver mas
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            
+                <p>
+                    Modo de Preparación:
+                </p>
+                <p>
+                    Primero derretimos 100g de chocolate con leche y le agregamos 2 cucharadas soperas de pasta de maní,mezclamos, lo colocamos en una budinera o recipiente rectangular que tengas, previamente cubrirlo por dentro con film, llevamos al freezer por 5 min.
+                    Mientras, derretimos los 100g de choco blanco y le agregamos 3 cucharadas soperas de pasta de maní,sacamos del freezer la capa anterior, le agregamos esta mezcla y la volvemos llevar al freezer por otros 5 min.
+                    Llegamos a la última capa donde repetimos lo mismo que en la primera, últimos 5 minutos en el freezer y ¡listos tus Marrocs!
+                </p>
+           
+            <div class="video">
+                 <iframe 
+                       src="https://www.youtube.com/embed/BCeUuLwNOcY" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                 </iframe>
+                </div>
+        
+    
+       
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+  </div>
 </div>
 
-
-
+</section>
+      
+   
+ 
+  
+         
+      
     <section class="blog-parte2">
 
 
-        <h5>Árbol de la Vida</h5>
+        <h5>Hierbas</h5>
 
-    <div class="recomendacion"> <img src="./imagenes/blogs/moringa0.jpg" alt="">
-        <img src="./imagenes/blogs/moringa1.jpg" alt=""></div>
+    <div class="recomendacion"> <img id="hierbas" src="./imagenes/blogs/moringa0.jpg" alt="">
+        </div>
 
 
-    <div class="texto"> 
-        
+    <div class="texto" id="hierbas"> 
+       <h5> Árbol de la Vida </h5>
         <p>  Hoy te traemos para que conozcas esta maravillosa hierba medicinal,La Moringa.
         </p>
         <p>
@@ -177,47 +212,147 @@
         </p>
         <p>
             ¿Qué es lo que la hace maravillosa?
-        </p>
-        <p> Tiene un elevado contenido de Vitaminas, minerales, aminoácidos y proteínas</p>
-        <ul>
-            Eso nos favorece en:
-            <li>
-                Aumentar la aptitud respiratoria.
-            </li>
-            <li>
-                Prevenir diabetes.
-            </li>
-            <li>
-                Regular la presión arterial.
-            </li>
-            <li>
-                Perder peso.
-            </li>
-            <li>
-                Aumentar las defensas.
-            </li>
-            <li>
-                Prevenir la anemia.
-            </li>
-            <li>
-                Proteger y humectar la piel.
-            </li>
-            <li>
-                Mejorar la salud del sistema digestivo.
-            </li>
-            <li>
-                Tratar las hemorroides.
-            </li>
-            <li>
-                Mejorar la visión.
-            </li>
-        </ul>
-        <p>
-            Podés encontrarla en sus múltiples versiones: hierba seca, polvo, cápsulas, tintura madre.
-        </p>
+        </p >
+
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+    seguir leyendo
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Moringa</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p> Tiene un elevado contenido de Vitaminas, minerales, aminoácidos y proteínas</p>
+            <ul>
+                Eso nos favorece en:
+                <li>
+                    Aumentar la aptitud respiratoria.
+                </li>
+                <li>
+                    Prevenir diabetes.
+                </li>
+                <li>
+                    Regular la presión arterial.
+                </li>
+                <li>
+                    Perder peso.
+                </li>
+                <li>
+                    Aumentar las defensas.
+                </li>
+                <li>
+                    Prevenir la anemia.
+                </li>
+                <li>
+                    Proteger y humectar la piel.
+                </li>
+                <li>
+                    Mejorar la salud del sistema digestivo.
+                </li>
+                <li>
+                    Tratar las hemorroides.
+                </li>
+                <li>
+                    Mejorar la visión.
+                </li>
+            </ul>
+            <p>
+                Podés encontrarla en sus múltiples versiones: hierba seca, polvo, cápsulas, tintura madre.
+            </p>
+            <img src="./imagenes/blogs/moringa1.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
     </div>
     </section>
-</div> 
+
+
+<section class="blog-parte2">
+    <h5>Productos</h5>
+
+    <div class="recomendacion"><img id="productos" src="imagenes/blogs/arandanos rojos.jpg" alt=""></div>
+
+    <div class="texto">
+        <h5>Arandanos rojos</h5>
+        <p> Sus características nutricionales y antioxidantes hacen de esta fruta una fruta maravillosa y super completa para nuestro consumo.</p>
+        <p>Lo mejor de todo es que podés incluirla en tu alimentación de un montón de maneras distintas, buscando la que más te agrade o la que te indique tu médico o nutri de confianza.</p>
+        <p> Te cuento,de un modo simple,sus propiedades beneficiosas.</p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+    Seguir leyendo
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Arandanos Rojos</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li>Ricas en vitaminas C y polifenoles antioxidantes.</li>
+                <li>Antiinflamatoria por su gran cantidad de antioxidantes.</li>
+                <li>Rejuvenece</li>
+                <li>Reduce el riesgo de sufrir cáncer.</li>
+                <li>Previene enfermedades neurodegenerativas,mejora las funciones cognitivas y la memoria</li>
+                <li>Previene daños en el ADN.</li>
+                <li>Ayuda a luchar contra la #diabetes,ya que al consumirlas mejora la sensibilidad a la insulina en personas resistentes a la misma.</li>
+                <li>Favorece la presencia de #colesterol bueno e inhibe la formación de colesterol malo.</li>
+                <li>Reduce y regula la presión arteria</li>
+                <li>Mejora la visión,los arándanos contienen antocianinas,están ayudan a prevenir daños oculares</li>
+                <li>Cuida la piel .Los #fitoquímicos y #antioxidantes presentes en la fruta hacen que la piel se vea más suave y joven</li>
+                <li>Tienen alta acción bactericida a nivel digestivo así como también protege contra infecciones urinarias.</li>
+            </ul>
+            <p>Cómo la conseguis?...</p>
+            <p>La fruta fresca,fruta deshidratada(en pasas),jugos,tinturas, cápsulas,en polvo y más.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <section class="redes">
         <div>

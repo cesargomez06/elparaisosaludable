@@ -9,3 +9,10 @@ img {
     display: flex;
     padding-left: 100px;
 }
+.productos {
+    font-family: $fuente-titulos;
+    text-align: center;
+    h3 {
+        font-size: 40px;
+    }
+}
