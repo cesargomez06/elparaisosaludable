@@ -137,8 +137,8 @@ header .covid19 {
 
 .novedades {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: baseline;
   background: #A6C48A;
   padding: 1px 10px 2px 0;
   border: solid 1px #a6c48a;
@@ -159,22 +159,46 @@ header .covid19 {
   text-align: center;
 }
 
-.contacto, .donde-encontrarnos {
+.contacto {
   display: flex;
   justify-content: center;
+  align-items: baseline;
   padding: 0px;
   border: 0px;
   background-color: rgba(0, 0, 0, 0.01);
 }
-.contacto p, .donde-encontrarnos p {
+.contacto p {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 0px;
 }
 
-.donde-encontrarnos {
-  flex-direction: column;
-  padding: 10px 50vh;
+.contacto1 {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 0px;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+.contacto1 p {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+section.donde-encontrarnos h2 {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+
+section.envio h2 {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
 }
 
 .mapa {
@@ -275,7 +299,7 @@ header .covid19 {
 }
 
 .video {
-  grid-area: 5/3/4/2;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px 10px;
@@ -295,7 +319,14 @@ header .covid19 {
 }
 .blog button.btn.btn-secondary {
   color: black;
-  background-color: #fdffb6;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.blog .modal-body img {
+  width: 300px;
+  height: 300px;
+}
+.blog .modal-body {
+  text-align: left;
 }
 
 .blog h2 {
@@ -372,7 +403,7 @@ header .covid19 {
   background-position: center;
 }
 .menu-blog .menu-blog0 h5 {
-  font-size: 30px;
+  font-size: 2rem;
   padding-bottom: 20px;
   color: black;
   transition: color 0.8s;
@@ -391,7 +422,7 @@ header .covid19 {
   background-position: center;
 }
 .menu-blog .menu-blog1 h5 {
-  font-size: 30px;
+  font-size: 2rem;
   padding-bottom: 20px;
   color: black;
   transition: color 0.8s;
@@ -410,7 +441,7 @@ header .covid19 {
   background-position: center;
 }
 .menu-blog .menu-blog2 h5 {
-  font-size: 30px;
+  font-size: 2rem;
   padding-bottom: 20px;
   color: black;
   transition: color 0.8s;
@@ -545,12 +576,6 @@ footer {
     display: flex;
   }
 
-  .contacto p, .donde-encontrarnos p {
-    display: none;
-    font-size: 14px;
-    margin: 0;
-  }
-
   header .responsive {
     background: #dd9787;
     display: flex;
@@ -612,8 +637,17 @@ footer {
     height: 90%;
   }
 
-  .contacto, .donde-encontrarnos {
-    display: inline;
+  .contacto {
+    display: none;
+  }
+
+  .contacto1 {
+    display: unset;
+  }
+  .contacto1 p {
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
   }
 
   header nav ul {
@@ -746,12 +780,30 @@ footer {
 
   .video {
     grid-area: 5/1/4/1;
-    justify-content: left;
+    justify-content: center;
     margin: 3px 3px;
   }
   .video iframe {
     width: 100%;
     height: 254px;
+  }
+
+  .blog button.btn.btn-primary {
+    text-align: center;
+  }
+
+  .menu-blog {
+    height: auto;
+    padding: 10px;
+  }
+  .menu-blog .menu-blog0 h5 {
+    font-size: 1.3rem;
+  }
+  .menu-blog .menu-blog1 h5 {
+    font-size: 1.3rem;
+  }
+  .menu-blog .menu-blog2 h5 {
+    font-size: 1.3rem;
   }
 
   .blog-parte2 {
@@ -799,7 +851,7 @@ footer {
     display: flex;
   }
 
-  .contacto p, .donde-encontrarnos p {
+  .contacto p {
     display: none;
     font-size: 14px;
     margin: 0;
@@ -865,7 +917,7 @@ footer {
     display: none;
   }
 
-  .contacto, .donde-encontrarnos {
+  .contacto {
     display: inline;
   }
 
@@ -1060,7 +1112,7 @@ button.btn.btn-primary {
 .menu-inferior {
   display: flex;
   background-color: unset;
-  padding-top: 50px;
+  padding-top: 20px;
   justify-content: space-evenly;
   align-items: center;
 }

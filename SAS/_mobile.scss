@@ -3,12 +3,7 @@
     .row {
         display: flex;
     }
-    .contacto p {
-        display: none;
-        font-size: 14px;
-        margin: 0;
-    }
-
+    
     header {
     .responsive {
         background: #dd9787;
@@ -69,10 +64,18 @@
         height: 90%;
     }
     }
-    
     .contacto {
-        display: inline;
+        display: none;
     }
+    .contacto1 {
+        display: unset;
+     p {
+        font-size: 14px;
+        margin: 0;
+        text-align: center;
+    }
+    }
+
     header nav ul {
         display: none;
         
@@ -203,13 +206,32 @@
    
     .video {
         grid-area: 5 /1 / 4/ 1;
-        justify-content: left;
+        justify-content: center;
         margin: 3px 3px;
         iframe {
         width: 100%;
         height: 254px;
         }
     }
+    .blog {
+        button.btn.btn-primary {
+            text-align: center;
+        }
+    }
+    .menu-blog {
+        height: auto;
+        padding: 10px;
+    .menu-blog0 h5 {
+        font-size: 1.3rem;
+    }
+    .menu-blog1 h5 {
+        font-size: 1.3rem;
+    }
+    .menu-blog2 h5 {
+        font-size: 1.3rem;
+    }
+    }
+    
     .blog-parte2 {
         display: flex;
         flex-direction: column;
