@@ -1,24 +1,66 @@
-.covid .covid__img {
+.covid .covid-1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: baseline;
+}
+.covid .covid-2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: baseline;
+}
+.covid .covid-2 iframe {
+  justify-self: right;
   width: 500px;
   height: 500px;
-  display: flex;
-  justify-content: center;
+}
+.covid .covid-2 img {
+  width: 500px;
+  height: 500px;
+  justify-self: left;
+}
+.covid .covid-3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: baseline;
+}
+.covid .covid-3 iframe {
+  justify-self: left;
+  width: 500px;
+  height: 500px;
+}
+.covid .covid-3 img {
+  width: 500px;
+  height: 500px;
+  justify-self: right;
+}
+.covid iframe {
+  width: 500px;
+  height: 500px;
+  justify-self: left;
+  padding: 10px;
+}
+.covid img {
+  width: 500px;
+  height: 500px;
+  justify-self: right;
+  margin: unset;
 }
 @media (min-width: 769px) and (max-width: 1199px) {
-  .covid .covid__img {
+  .covid img {
     width: 300px;
     height: 300px;
   }
 }
 @media (max-width: 768px) {
-  .covid .covid__img {
+  .covid img {
     width: 250px;
     height: 250px;
   }
 }
 .covid .covid__titulo {
+  display: block;
   color: black;
-  text-transform: uppercase;
+  text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 25px;
 }
@@ -242,6 +284,10 @@ section.envio h2 {
   width: 100%;
   height: 200px;
   resize: none;
+}
+
+.enviar-mensaje {
+  justify-content: center;
 }
 
 .enviar-mensaje input {
@@ -511,17 +557,6 @@ section h2 {
   text-align: left;
   font-size: 50px;
 }
-section h2::after {
-  content: "";
-  display: block;
-  width: 0px;
-  height: 5px;
-  background: black;
-  transition: width 2s;
-}
-section h2:hover::after {
-  width: 300px;
-}
 section img {
   width: 700px;
   height: 700px;
@@ -696,10 +731,6 @@ footer {
 
   ul.nav.nav-pills {
     flex-wrap: unset;
-  }
-
-  section h2::after {
-    display: none;
   }
 
   .promociones {
@@ -904,10 +935,6 @@ footer {
     text-align: center;
   }
 
-  h2::after {
-    display: none;
-  }
-
   .novedades div {
     width: 100%;
     padding: 2px;
@@ -958,10 +985,6 @@ footer {
     background-color: white;
     color: black;
     font-weight: bold;
-  }
-
-  section h2::after {
-    display: none;
   }
 
   ol.carousel-indicators {

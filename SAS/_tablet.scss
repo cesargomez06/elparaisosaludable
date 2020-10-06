@@ -50,9 +50,7 @@
         align-items: center;
         text-align: center;
     }
-    h2::after {
-        display: none;
-    }
+    
     .novedades div {
         width: 100%;
         padding: 2px;
@@ -103,9 +101,6 @@
         background-color:white;
         color: black;
         font-weight: bold;
-    }
-    section h2::after{
-        display: none;
     } 
     ol.carousel-indicators {
         margin-bottom: 0px;

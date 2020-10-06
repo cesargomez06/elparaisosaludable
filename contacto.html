@@ -13,7 +13,9 @@
      rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     /><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-</head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+
 <header>
   <div id="subir" class="contacto">
     <p> Horarios: Lunes a viernes de 9 a 20hs. Sábados y domingos de 9 a 13hs</P>
@@ -98,6 +100,7 @@
  </section>
 
   <form action="#" class="formulario wow animate__animated animate__backInLeft">
+    
 
              <h1>Dejanos tu consulta</h1>
              <p>
@@ -140,14 +143,17 @@
           <label for="acepto"> <p>¿Desea recibir novedades en tu e-mail?:</p> </label>
           <input type="checkbox" name="acepto" value="si">
         </div>
+        <div class="g-recaptcha" data-sitekey="6LcgFNQZAAAAAMm4ZAHThQazOXSPzLXBlmXbYDtb"></div>
         <div>
-          <label ><p>Comentarios:</p></label>
+          <label><p>Comentarios:</p></label>
           <textarea name="comentarios"  cols="100" rows="25"></textarea>
         </div>
         <div class="enviar-mensaje">
+          
           <input type="submit" value="ENVIAR MENSAJE" id="Apellido" class="btn-enviar" >
         </div>
     </form>
+    
   </section>
     <section class="redes wow animate__animated animate__backInLeft">
       <div>
@@ -169,9 +175,11 @@
           <label for="email" ></label>
           <input type="email" name="email"placeholder="Ingresá tu e-mail" required>
         </div>
+       
         <div>
           <input type="submit" class="btn-enviar" value="Enviar Mensaje">
         </div>
+        
       </form>
     </section>
   
