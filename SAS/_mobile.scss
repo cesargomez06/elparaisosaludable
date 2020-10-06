@@ -44,12 +44,6 @@
         align-items: center;
     }
     .novedades {
-        background: #A6C48A;
-        padding: 1px 0 2px;
-        border: solid 1px #a6c48a;
-        width: 100%;
-        margin: 0rem;
-        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -156,6 +150,7 @@
         padding: 0px;
         margin: 0px;
     }
+    /* SECTION BLOG */
     .receta {
         display: grid;
         grid-template-columns: 1fr;
@@ -182,26 +177,21 @@
          font-size: 30px;   
         }
     }
-    .titulo {
-        text-align: center;
-        grid-area: 1 / 1 / 1 / 1;
+    .menu-blog {
+
+    .menu-blog1:hover {
+        width: 30vw;
     }
-    .ingredientes {
-        text-align: center;
-        grid-area: 2 / 1 / 3 / 1;
-        
-    }       
-    .preparacion {
-        grid-area: 6 /1 / 7 / 1 ;
-       
+    .menu-blog2:hover {
+        width: 30vw;
+    }
+    .menu-blog0:hover {
+        width: 30vh;
+    }
+    }
     
-    }
-    ol.carousel-indicators {
-        margin-bottom: 0px;
-    }
    
     .video {
-        grid-area: 5 /1 / 4/ 1;
         justify-content: center;
         margin: 3px 3px;
         iframe {
@@ -218,13 +208,13 @@
         height: auto;
         padding: 10px;
     .menu-blog0 h5 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .menu-blog1 h5 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .menu-blog2 h5 {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     }
     
@@ -264,4 +254,45 @@
         width: 250px;
         height: 250px;
     }
+
+    /* SECTION COVID */
+            .covid  {
+         .covid-1 {
+             display: block;
+                
+             img {
+             display: block;
+             margin: auto;
+             width: 300px;
+             height: 300px;
+                 }
+                 iframe {
+                     display: block;
+                     margin: auto;
+                     width: 300px;
+                     height: 300px;
+                 }
+             }
+        } 
+        .covid  {
+         .covid-2 {
+             display: block;
+             
+             img {
+             display: block;
+             margin: auto;
+             width: 300px;
+             height: 300px;
+                 }
+             iframe {
+                 display: block;
+                 margin: auto;
+                 width: 300px;
+                 height: 300px;
+             }
+             }
+        } 
+        ol.carousel-indicators {
+            margin-bottom: 0px;
+        }      
 }

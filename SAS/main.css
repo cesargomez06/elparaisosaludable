@@ -3,6 +3,18 @@
   grid-template-columns: 50% 50%;
   justify-items: baseline;
 }
+.covid .covid-1 iframe {
+  width: 500px;
+  height: 500px;
+  justify-self: left;
+  padding: 10px;
+}
+.covid .covid-1 img {
+  width: 500px;
+  height: 500px;
+  justify-self: right;
+  margin: unset;
+}
 .covid .covid-2 {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -12,50 +24,13 @@
   justify-self: right;
   width: 500px;
   height: 500px;
+  padding: 10px;
 }
 .covid .covid-2 img {
   width: 500px;
   height: 500px;
   justify-self: left;
-}
-.covid .covid-3 {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  justify-items: baseline;
-}
-.covid .covid-3 iframe {
-  justify-self: left;
-  width: 500px;
-  height: 500px;
-}
-.covid .covid-3 img {
-  width: 500px;
-  height: 500px;
-  justify-self: right;
-}
-.covid iframe {
-  width: 500px;
-  height: 500px;
-  justify-self: left;
-  padding: 10px;
-}
-.covid img {
-  width: 500px;
-  height: 500px;
-  justify-self: right;
   margin: unset;
-}
-@media (min-width: 769px) and (max-width: 1199px) {
-  .covid img {
-    width: 300px;
-    height: 300px;
-  }
-}
-@media (max-width: 768px) {
-  .covid img {
-    width: 250px;
-    height: 250px;
-  }
 }
 .covid .covid__titulo {
   display: block;
@@ -652,12 +627,6 @@ footer {
   }
 
   .novedades {
-    background: #A6C48A;
-    padding: 1px 0 2px;
-    border: solid 1px #a6c48a;
-    width: 100%;
-    margin: 0rem;
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -767,6 +736,7 @@ footer {
     margin: 0px;
   }
 
+  /* SECTION BLOG */
   .receta {
     display: grid;
     grid-template-columns: 1fr;
@@ -791,26 +761,17 @@ footer {
     font-size: 30px;
   }
 
-  .titulo {
-    text-align: center;
-    grid-area: 1/1/1/1;
+  .menu-blog .menu-blog1:hover {
+    width: 30vw;
   }
-
-  .ingredientes {
-    text-align: center;
-    grid-area: 2/1/3/1;
+  .menu-blog .menu-blog2:hover {
+    width: 30vw;
   }
-
-  .preparacion {
-    grid-area: 6/1/7/1;
-  }
-
-  ol.carousel-indicators {
-    margin-bottom: 0px;
+  .menu-blog .menu-blog0:hover {
+    width: 30vh;
   }
 
   .video {
-    grid-area: 5/1/4/1;
     justify-content: center;
     margin: 3px 3px;
   }
@@ -828,13 +789,13 @@ footer {
     padding: 10px;
   }
   .menu-blog .menu-blog0 h5 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .menu-blog .menu-blog1 h5 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .menu-blog .menu-blog2 h5 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .blog-parte2 {
@@ -875,6 +836,43 @@ footer {
   img.wow.animate__.animate__zoomIn.animated {
     width: 250px;
     height: 250px;
+  }
+
+  /* SECTION COVID */
+  .covid .covid-1 {
+    display: block;
+  }
+  .covid .covid-1 img {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+  .covid .covid-1 iframe {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+
+  .covid .covid-2 {
+    display: block;
+  }
+  .covid .covid-2 img {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+  .covid .covid-2 iframe {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+
+  ol.carousel-indicators {
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 769px) and (max-width: 1199px) {
@@ -1034,6 +1032,41 @@ footer {
   .banner img {
     width: 100%;
     padding-left: unset;
+  }
+
+  /* SECTION COVID */
+}
+@media (min-width: 769px) and (max-width: 1199px) and (min-width: 769px) and (max-width: 1199px) {
+  .covid .covid-1 {
+    display: block;
+  }
+  .covid .covid-1 img {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+  .covid .covid-1 iframe {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+
+  .covid .covid-2 {
+    display: block;
+  }
+  .covid .covid-2 img {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+  .covid .covid-2 iframe {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
   }
 }
 .preguntas {

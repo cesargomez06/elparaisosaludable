@@ -143,4 +143,45 @@
         width: 100%;
         padding-left: unset;
     }
+    /* SECTION COVID */
+    @media (min-width: 769px) and (max-width: 1199px) {
+        .covid  {
+            .covid-1 {
+                display: block;
+                   
+                img {
+                display: block;
+                margin: auto;
+                width: 300px;
+                height: 300px;
+                    }
+                    iframe {
+                        display: block;
+                        margin: auto;
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
+           } 
+           .covid  {
+            .covid-2 {
+                display: block;
+                
+                img {
+                display: block;
+                margin: auto;
+                width: 300px;
+                height: 300px;
+                    }
+                iframe {
+                    display: block;
+                    margin: auto;
+                    width: 300px;
+                    height: 300px;
+                }
+                }
+           }       
+        
+    }
+    
 }
